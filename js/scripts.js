@@ -194,7 +194,7 @@ $(document).ready(function () {
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Sep 13, 2017 00:00'),
+            end: new Date('Sep 13, 2025 18:00'),
 
             // Event Address
             address: 'Ktima Panagiotaki, Heraklion, Crete, Greece',
@@ -214,9 +214,9 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Μισο μρε λεπτό!</strong> Να σώσω τσι πληροφορίες.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0baee9d279d34fa1dfd71aadb908c3f'
-            && MD5($('#invite_code').val()) !== 'b0baee9d279d34fa1dfd71aadb908c3f') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Χίλια Συγγνώμη!</strong> Δεν εχεις μρε σωστό κωδικό!'));
+        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
+            && MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40') {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Μα μρέ κουμπάρε!</strong> Δεν εχεις μρε σωστό κωδικό!'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbzhtSQOJWH9eZMd_eevI41a3WHWOi-mJlSLnplV5YhLcbGyD8xgBqyzSDCbgSGeFKc/exec', data)
                 .done(function (data) {
